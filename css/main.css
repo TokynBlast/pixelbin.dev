@@ -1,0 +1,62 @@
+
+/*www.w3.org/Style/Examples/007/fonts.en.html*/
+
+.menu {  /* How the menu is displayed */
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    background-color: #333333;
+    color: white; 
+    border-radius: 10px;
+    height: 40px;
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-right: 5px;
+    margin: 0 0 50px 0;
+    font: inherit;
+    z-index: 1000;
+}
+
+.hide {   /* hide the element */
+    font-size:0px;
+    opacity:0px;
+    border-width:0px;
+    max-width:0px;
+    max-height:0px;
+    display:none;
+    width:0%;
+    height:0%;
+    z-index:-10000;
+}
+
+.stick {   /* stick the element to the screen */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.title { /* How the title is displayed */
+    display:flex;
+    justify-content:center;
+    font:50px garamond;
+}
+
+.pay { /*Pay Button style*/
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top:23px;
+    align-items: center;
+    display: flex;
+    gap:10px
+}
+
+.title { /* The title of pages */
+    display:flex;
+    justify-content:center;
+    font:50px garamond, sans-serif;
+}
