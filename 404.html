@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typewriter Effect with Immediate Line Rendering</title>
+  <style>
+    /* Set the full-page background color to dark gray */
+    body {
+      margin: 0;
+      background-color: #333333;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    /* The pre tag spans the entire screen, has a z-index of -1000, and its text is green */
+    #typewriter {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1000;
+      color: green;
+      white-space: pre-wrap; /* preserves whitespace and line breaks */
+      font-size: 1.5em; /* Increase font size for better readability */
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    /* Rendered HTML container spans the entire screen, has no border or background,
+       so that the rendered text can be clearly seen */
+    #rendered {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      z-index: 1; /* ensure it appears above the pre tag */
+      background: transparent;
+      border: none;
+      color: white; /* Set text color to white */
+      font-size: 1.5em; /* Match font size for consistency */
+      font-weight: bold; /* Make text bold */
+    }
+  </style>
+</head>
+<body>
+  <!-- Pre tag used for the typewriter effect (plain text) -->
+  <pre id="typewriter"></pre>
+  <!-- Container where the HTML will be rendered once typing is complete -->
+  <div id="rendered"></div>
+
+  <!-- Include the external JavaScript file -->
+  <script src="js/404.js"></script>
+</body>
+</html>
